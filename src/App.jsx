@@ -1,23 +1,33 @@
-// import logo from './logo.svg';
-// import './App.css';
+import React, { useState } from 'react';
+import PasswordGenerator from './components/PasswordGenerator/PasswordGenerator';
+import PasswordOptions from './components/PasswordGenerator/PasswordOptions';
+import PasswordStrength from './components/PasswordGenerator/PasswordStrength';
 
 function App() {
+  const [password, setPassword] = useState('');
+  const [length, setLength] = useState(6);
+  const [options, setOptions] = useState({
+    includeLowercase: true,
+    includeUppercase: true,
+    includeNumbers: true,
+    includeSymbols: true,
+  });
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <PasswordOptions
+        length={length}
+        setLength={setLength}
+        options={options}
+        setOptions={setOptions}
+      />
+      <PasswordGenerator
+        length={length}
+        options={options}
+        password={password}
+        setPassword={setPassword}
+      />
+      <PasswordStrength password={password} />
     </div>
   );
 }
