@@ -13,16 +13,11 @@ function App() {
     includeNumbers: true,
     includeSymbols: true,
   });
+  const [strength, setStrength] = useState(0);
 
-   // Déterminez la force du mot de passe
-   const getPasswordStrength = () => {
-    // Logique pour déterminer la force du mot de passe
-    if (password.length < 8) return 'faible';
-    if (password.length < 12) return 'moyen';
-    return 'fort';
-  };
-
-  const strength = getPasswordStrength();
+  const handleStrengthChange = (newStrength) =>{
+    setStrength(newStrength);
+  }
 
 
   return (
@@ -39,11 +34,11 @@ function App() {
         password={password}
         setPassword={setPassword}
       />
-      <PasswordStrength password={password} />
-      {strength === 'faible' && (
+      <PasswordStrength password={password} onStrengthChange={handleStrengthChange}/>
+      {strength <= 50 && (
         <Alert severity = "warning">
                   Le mot de passe est faible. Veuillez le renforcer pour plus de sécurité.
-                  </Alert>
+        </Alert>
                 )}
     </div>
   );
