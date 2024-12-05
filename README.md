@@ -1,70 +1,281 @@
-# Getting Started with Create React App
+# Générateur de Mots de Passe Sécurisés
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![Logo de l'application](./images/logo.png)
 
-## Available Scripts
+## Description
 
-In the project directory, you can run:
+Bienvenue dans **Générateur de Mots de Passe Sécurisés**, une application web moderne et intuitive conçue pour vous aider à créer des mots de passe robustes et personnalisés. Que ce soit pour vos comptes personnels ou professionnels, notre générateur vous offre une flexibilité maximale tout en garantissant une sécurité optimale.
 
-### `npm start`
+![Capture d'écran de l'application](./images/screenshot.png)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Fonctionnalités
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- **Personnalisation de la Longueur** : Choisissez la longueur souhaitée pour votre mot de passe, de 1 à 64 caractères.
+- **Options de Caractères** :
+  - Inclure des lettres minuscules
+  - Inclure des lettres majuscules
+  - Inclure des chiffres
+  - Inclure des symboles
+- **Évaluation de la Force** : Visualisez la force de votre mot de passe en temps réel grâce à un indicateur visuel.
+- **Copie Facile** : Copiez instantanément votre mot de passe généré dans le presse-papiers.
+- **Sécurité Renforcée** : Utilisation de l'API `crypto` pour une génération de caractères aléatoires cryptographiquement sécurisée.
 
-### `npm test`
+## Aperçu
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Options de Génération
 
-### `npm run build`
+![Options de Génération](./images/options.png)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Indicateur de Force
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+![Indicateur de Force](./images/strength_indicator.png)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Installation
 
-### `npm run eject`
+Suivez les étapes ci-dessous pour configurer et exécuter le projet localement.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Prérequis
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- [Node.js](https://nodejs.org/) (version 14 ou supérieure)
+- [npm](https://www.npmjs.com/) (vient généralement avec Node.js)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### Étapes
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+1. **Cloner le Repository**
 
-## Learn More
+   ```bash
+   git clone https://github.com/votre-utilisateur/password_generator.git
+   cd password_generator
+   ```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+2. **Installer les Dépendances**
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+   ```bash
+   npm install
+   ```
 
-### Code Splitting
+3. **Démarrer l'Application**
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+   ```bash
+   npm start
+   ```
 
-### Analyzing the Bundle Size
+   Ouvrez [http://localhost:3000](http://localhost:3000) dans votre navigateur pour voir l'application en action.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## Utilisation
 
-### Making a Progressive Web App
+1. **Sélectionner la Longueur du Mot de Passe**  
+   Utilisez le curseur pour définir la longueur désirée pour votre mot de passe.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+2. **Choisir les Options de Caractères**  
+   Activez ou désactivez les options pour inclure des minuscules, majuscules, chiffres et symboles.
 
-### Advanced Configuration
+3. **Générer le Mot de Passe**  
+   Cliquez sur le bouton "Générer un nouveau mot de passe" pour créer un mot de passe basé sur vos préférences.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+4. **Copier le Mot de Passe**  
+   Utilisez le bouton "Copier le mot de passe" pour copier le mot de passe généré dans votre presse-papiers.
 
-### Deployment
+5. **Évaluer la Force**  
+   Consultez l'indicateur de force pour assurer que votre mot de passe est suffisamment sécurisé.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## Technologies Utilisées
 
-### `npm run build` fails to minify
+- [React](https://reactjs.org/)
+- [Material-UI](https://mui.com/)
+- [React Copy to Clipboard](https://github.com/nkbt/react-copy-to-clipboard)
+- [React Testing Library](https://testing-library.com/docs/react-testing-library/intro/)
+- [Web Vitals](https://github.com/GoogleChrome/web-vitals)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Tests
+
+Des tests unitaires sont inclus pour assurer la fiabilité des composants principaux.
+
+Pour exécuter les tests, utilisez la commande suivante :
+
+```bash
+npm test
+```
+
+## Contribution
+
+Les contributions sont les bienvenues ! Pour contribuer, veuillez suivre les étapes suivantes :
+
+1. **Forker le Repository**
+2. **Créer une Branche de Fonctionnalité**
+
+   ```bash
+   git checkout -b fonctionnalite/nom-de-la-fonctionnalite
+   ```
+
+3. **Committer Vos Changements**
+
+   ```bash
+   git commit -m "Ajout de la fonctionnalité XYZ"
+   ```
+
+4. **Pousser la Branche**
+
+   ```bash
+   git push origin fonctionnalite/nom-de-la-fonctionnalite
+   ```
+
+5. **Ouvrir une Pull Request**
+
+Assurez-vous que vos contributions respectent les normes de codage et sont bien testées.
+
+## Licence
+
+Ce projet est sous licence [MIT](LICENSE).
+
+## Auteurs
+
+- **Votre Nom** - *Développement initial* - [VotreProfilGitHub](https://github.com/votre-utilisateur)
+
+## Remerciements
+
+- Merci à la communauté Open Source pour les outils et bibliothèques utilisés dans ce projet.
+- [Create React App](https://create-react-app.dev/)
+- [Material-UI](https://mui.com/)
+
+---
+
+# Secure Password Generator
+
+![Application Logo](./images/logo.png)
+
+## Description
+
+Welcome to **Secure Password Generator**, a modern and intuitive web application designed to help you create robust and personalized passwords. Whether for your personal or professional accounts, our generator offers maximum flexibility while ensuring optimal security.
+
+![Application Screenshot](./images/screenshot.png)
+
+## Features
+
+- **Length Customization**: Choose the desired length for your password, from 1 to 64 characters.
+- **Character Options**:
+  - Include lowercase letters
+  - Include uppercase letters
+  - Include numbers
+  - Include symbols
+- **Strength Evaluation**: Visualize your password strength in real-time with a visual indicator.
+- **Easy Copy**: Instantly copy your generated password to the clipboard.
+- **Enhanced Security**: Utilizes the `crypto` API for cryptographically secure random character generation.
+
+## Preview
+
+### Generation Options
+
+![Generation Options](./images/options.png)
+
+### Strength Indicator
+
+![Strength Indicator](./images/strength_indicator.png)
+
+## Installation
+
+Follow the steps below to set up and run the project locally.
+
+### Prerequisites
+
+- [Node.js](https://nodejs.org/) (version 14 or higher)
+- [npm](https://www.npmjs.com/) (usually comes with Node.js)
+
+### Steps
+
+1. **Clone the Repository**
+
+   ```bash
+   git clone https://github.com/your-username/password_generator.git
+   cd password_generator
+   ```
+
+2. **Install Dependencies**
+
+   ```bash
+   npm install
+   ```
+
+3. **Start the Application**
+
+   ```bash
+   npm start
+   ```
+
+   Open [http://localhost:3000](http://localhost:3000) in your browser to view the application in action.
+
+## Usage
+
+1. **Select Password Length**  
+   Use the slider to set the desired length for your password.
+
+2. **Choose Character Options**  
+   Toggle the switches to include lowercase, uppercase, numbers, and symbols.
+
+3. **Generate Password**  
+   Click the "Generate New Password" button to create a password based on your preferences.
+
+4. **Copy Password**  
+   Use the "Copy Password" button to copy the generated password to your clipboard.
+
+5. **Evaluate Strength**  
+   Check the strength indicator to ensure your password is sufficiently secure.
+
+## Technologies Used
+
+- [React](https://reactjs.org/)
+- [Material-UI](https://mui.com/)
+- [React Copy to Clipboard](https://github.com/nkbt/react-copy-to-clipboard)
+- [React Testing Library](https://testing-library.com/docs/react-testing-library/intro/)
+- [Web Vitals](https://github.com/GoogleChrome/web-vitals)
+
+## Tests
+
+Unit tests are included to ensure the reliability of the main components.
+
+To run the tests, use the following command:
+
+```bash
+npm test
+```
+
+## Contribution
+
+Contributions are welcome! To contribute, please follow these steps:
+
+1. **Fork the Repository**
+2. **Create a Feature Branch**
+
+   ```bash
+   git checkout -b feature/feature-name
+   ```
+
+3. **Commit Your Changes**
+
+   ```bash
+   git commit -m "Add XYZ feature"
+   ```
+
+4. **Push the Branch**
+
+   ```bash
+   git push origin feature/feature-name
+   ```
+
+5. **Open a Pull Request**
+
+Ensure your contributions adhere to coding standards and are well-tested.
+
+## License
+
+This project is licensed under the [MIT License](LICENSE).
+
+## Authors
+
+- **Your Name** - *Initial Development* - [YourGitHubProfile](https://github.com/your-username)
+
+## Acknowledgments
+
+- Thanks to the Open Source community for the tools and libraries used in this project.
+- [Create React App](https://create-react-app.dev/)
+- [Material-UI](https://mui.com/)
