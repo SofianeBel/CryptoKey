@@ -4,7 +4,7 @@
 
 ## Description
 
-Bienvenue dans **Générateur de Mots de Passe Sécurisés**, une application web moderne et intuitive conçue pour vous aider à créer des mots de passe robustes et personnalisés. Que ce soit pour vos comptes personnels ou professionnels, notre générateur vous offre une flexibilité maximale tout en garantissant une sécurité optimale.
+Bienvenue sur **Secure Password Generator**, une application web moderne et intuitive pour m'initier à la programmation d'applications.
 
 ![Capture d'écran de l'application](./images/screenshot.png)
 
@@ -44,8 +44,8 @@ Suivez les étapes ci-dessous pour configurer et exécuter le projet localement.
 1. **Cloner le Repository**
 
    ```bash
-   git clone https://github.com/votre-utilisateur/password_generator.git
-   cd password_generator
+   git clone https://github.com/SofianeBel/CryptoKey.git
+   cd CryptoKey
    ```
 
 2. **Installer les Dépendances**
@@ -85,7 +85,6 @@ Suivez les étapes ci-dessous pour configurer et exécuter le projet localement.
 - [Material-UI](https://mui.com/)
 - [React Copy to Clipboard](https://github.com/nkbt/react-copy-to-clipboard)
 - [React Testing Library](https://testing-library.com/docs/react-testing-library/intro/)
-- [Web Vitals](https://github.com/GoogleChrome/web-vitals)
 
 ## Tests
 
@@ -130,7 +129,7 @@ Ce projet est sous licence [MIT](LICENSE).
 
 ## Auteurs
 
-- **Votre Nom** - *Développement initial* - [VotreProfilGitHub](https://github.com/votre-utilisateur)
+- **SIFLY**
 
 ## Remerciements
 
@@ -146,7 +145,7 @@ Ce projet est sous licence [MIT](LICENSE).
 
 ## Description
 
-Welcome to **Secure Password Generator**, a modern and intuitive web application designed to help you create robust and personalized passwords. Whether for your personal or professional accounts, our generator offers maximum flexibility while ensuring optimal security.
+Welcome to **Secure Password Generator**, a modern and intuitive web application to introduce me to application programming.
 
 ![Application Screenshot](./images/screenshot.png)
 
@@ -186,8 +185,8 @@ Follow the steps below to set up and run the project locally.
 1. **Clone the Repository**
 
    ```bash
-   git clone https://github.com/your-username/password_generator.git
-   cd password_generator
+   git clone https://github.com/SofianeBel/CryptoKey.git
+   cd CryptoKey
    ```
 
 2. **Install Dependencies**
@@ -227,7 +226,6 @@ Follow the steps below to set up and run the project locally.
 - [Material-UI](https://mui.com/)
 - [React Copy to Clipboard](https://github.com/nkbt/react-copy-to-clipboard)
 - [React Testing Library](https://testing-library.com/docs/react-testing-library/intro/)
-- [Web Vitals](https://github.com/GoogleChrome/web-vitals)
 
 ## Tests
 
@@ -272,7 +270,7 @@ This project is licensed under the [MIT License](LICENSE).
 
 ## Authors
 
-- **Your Name** - *Initial Development* - [YourGitHubProfile](https://github.com/your-username)
+- **SIFLY**
 
 ## Acknowledgments
 
